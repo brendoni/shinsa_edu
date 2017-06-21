@@ -4,7 +4,7 @@
 //
 //  Created by Brendan Reed on 6/20/17.
 //  Copyright © 2017 Brendan Reed. All rights reserved.
-//
+//  it's just test code for a class
 
 import UIKit
 
