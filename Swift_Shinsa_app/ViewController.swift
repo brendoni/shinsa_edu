@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttontapped(_ sender: Any) {
             tapCount = tapCount + 1
-            if tapCount >= 10  {
-                    BIGLABEL.text = "You've pressed the button over 10 times!"
+            if tapCount >= 20  {
+                    BIGLABEL.text = "You've pressed the button over 20 times!"
         }
     }
     
