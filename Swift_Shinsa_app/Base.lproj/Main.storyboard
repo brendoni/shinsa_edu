@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Shinsa_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RHx-6E-Mlb">
+                                <rect key="frame" x="85" y="110" width="67" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIGGOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-Aq-7sv">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minigom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqe-Ev-lpZ">
+                                <rect key="frame" x="85" y="231.5" width="66" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ki-u1-D1G">
+                                <rect key="frame" x="182" y="146" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ih-h4-qq7">
+                                <rect key="frame" x="161" y="319" width="53" height="30"/>
+                                <state key="normal" title="finGOM"/>
+                                <connections>
+                                    <action selector="buttontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egk-2r-tf1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWw-Rf-EOp">
+                                <rect key="frame" x="169" y="434" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="#2"/>
+                                <connections>
+                                    <action selector="buttonsrcool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XP4-YG-68L"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8ki-u1-D1G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="5dp-3I-Ybk"/>
+                            <constraint firstItem="RHx-6E-Mlb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="82J-5a-vpG"/>
+                            <constraint firstItem="2ih-h4-qq7" firstAttribute="centerX" secondItem="8ki-u1-D1G" secondAttribute="centerX" id="DHS-JR-kiz"/>
+                            <constraint firstItem="RHx-6E-Mlb" firstAttribute="leading" secondItem="mqe-Ev-lpZ" secondAttribute="leading" id="Hzq-e5-wnr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8ki-u1-D1G" secondAttribute="bottom" constant="500" id="UU8-Dw-LFX"/>
+                            <constraint firstItem="2ih-h4-qq7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uqy-kn-2n1"/>
+                            <constraint firstItem="RHx-6E-Mlb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="bvA-TX-0hA"/>
+                            <constraint firstItem="8ki-u1-D1G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i7f-zG-Ind"/>
+                            <constraint firstItem="2ih-h4-qq7" firstAttribute="top" secondItem="mqe-Ev-lpZ" secondAttribute="bottom" constant="67.5" id="nBR-rc-7O8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BIGLABEL" destination="mbv-Aq-7sv" id="zO8-fg-DK4"/>
+                        <outlet property="minilabel" destination="mqe-Ev-lpZ" id="qPO-Yr-FQA"/>
+                        <outlet property="pluslabel" destination="8ki-u1-D1G" id="QXx-LA-1Ct"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-97" y="136"/>
         </scene>
     </scenes>
 </document>

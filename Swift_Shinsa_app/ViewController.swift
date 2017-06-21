@@ -10,9 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var BIGLABEL: UILabel!
+    
+    var tapCount = 0
+    
+    @IBOutlet weak var minilabel: UILabel!
+    
+    @IBOutlet weak var pluslabel: UILabel!
+    
+    @IBAction func buttontapped(_ sender: Any) {
+            tapCount = tapCount + 1
+            if tapCount >= 10  {
+                    BIGLABEL.text = "You've pressed the button over 10 times!"
+        }
+    }
+    
+    
+    @IBAction func buttonsrcool(_ sender: Any) {
+        minilabel.text = "GOM R 2 cool"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.green
+        
     }
 
     override func didReceiveMemoryWarning() {
